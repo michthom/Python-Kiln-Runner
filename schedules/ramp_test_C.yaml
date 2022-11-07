@@ -1,0 +1,8 @@
+schedule_label: Ramp test F
+temperature_scale: SCALE_CELSIUS
+hold_time_scale: HOLD_MINUTES
+temperature_gradient_timebase: DEGREES_PER_HOUR
+segments:
+  - segment_label: Ramp 250/h to 1050F
+    target_temperature: 1050.0
+    temperature_gradient: 250.0

@@ -1,0 +1,11 @@
+schedule_label: Kilnwash firing
+temperature_scale: SCALE_FAHRENHEIT
+hold_time_scale: HOLD_MINUTES
+temperature_gradient_timebase: DEGREES_PER_MINUTE
+segments:
+  - segment_label: Ramp AFAP to 800F
+    target_temperature: 800.0
+    temperature_gradient: 500.0
+  - segment_label: Hold 30m at 800F
+    target_temperature: 800.0
+    hold_time: 30.0

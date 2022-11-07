@@ -1,0 +1,38 @@
+schedule_label: Oceanside Full fuse
+temperature_scale: SCALE_FAHRENHEIT
+hold_time_scale: HOLD_MINUTES
+temperature_gradient_timebase: DEGREES_PER_HOUR
+segments:
+  - segment_label: Ramp 250/h to 1050F
+    target_temperature: 1050.0
+    temperature_gradient: 250.0
+  - segment_label: Hold 30m at 1050
+    target_temperature: 1050.0
+    hold_time: 30.0
+  - segment_label: Ramp 250/h to 1250F
+    target_temperature: 1250.0
+    temperature_gradient: 250.0
+  - segment_label: Hold 20m at 1250F
+    target_temperature: 1250.0
+    hold_time: 20.0
+  - segment_label: Ramp 300/h to 1465F
+    target_temperature: 1465.0
+    temperature_gradient: 300.0
+  - segment_label: Hold 30m at 1465F
+    target_temperature: 1465.0
+    hold_time: 30.0
+  - segment_label: Cool AFAP to 950F
+    target_temperature: 950.0
+    temperature_gradient: 10000.0
+  - segment_label: Hold 60m at 950F
+    target_temperature: 950.0
+    hold_time: 60.0
+  - segment_label: Cool 200/h to 800F
+    target_temperature: 800.0
+    temperature_gradient: 200.0
+  - segment_label: Hold 10 at 800F
+    target_temperature: 800.0
+    hold_time: 10.0
+  - segment_label: Cool 300/h to 150F
+    target_temperature: 150.0
+    temperature_gradient: 300.0

@@ -1,0 +1,8 @@
+schedule_label: Minimal test schedule
+temperature_scale: SCALE_CENTIGRADE
+hold_time_scale: HOLD_MINUTES
+temperature_gradient_timebase: DEGREES_PER_MINUTE
+segments:
+  - segment_label: Hold 1m at 0 Celsius
+    target_temperature: 0.0
+    hold_time: 0.1

@@ -1,0 +1,43 @@
+kiln_label: Pi Kiln Reborn
+isolator:
+  isolator_label:          Contactor (Double Pole Single Throw)
+  isolator_type:           ISOLATOR_TYPE_RELAY_SINGLE
+  isolator_interface:      ISOLATOR_IF_PIN
+  isolator_connection_1:   D25
+display:
+  display_label:            RepRapDiscount Full Graphic Smart Controller
+  display_type:             DISPLAY_TYPE_ST7920
+  display_interface:        DISPLAY_IF_SPI
+  display_connection:       D13
+rotary_encoder:
+  rotary_encoder_label:         RepRapDiscount Full Graphic Smart Controller Encoder
+  rotary_encoder_type:          ROTARY_ENCODER_REPRAPDISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+  rotary_encoder_interface:     ROTARY_ENCODER_IF_PIN
+  rotary_encoder_A:             D5
+  rotary_encoder_B:             D6
+  rotary_encoder_button:        D26
+alarm:
+  alarm_label:                  RepRapDiscount Full Graphic Smart Controller Buzzer
+  alarm_type:                   ALARM_PASSIVE_PIEZO_BUZZER
+  alarm_interface:              ALARM_PWM
+  alarm_connection:             D16
+zones:
+  - zone_label:                 Zone 1
+    maximum_temperature_kelvin: 1273.15
+    sensor_config:
+      sensor_label:             MAX31856 Type K
+      sensor_type:              SENSOR_TYPE_MAX31856
+      sensor_interface:         SENSOR_IF_SPI
+      sensor_connection:        D21
+      fault_connection:         D20
+    controller_config:
+      controller_label:         Simple PID Controller
+      controller_type:          CONTROLLER_TYPE_PID
+      controller_interface:     CONTROLLER_IF_VIRTUAL
+      controller_connection:    None
+    heater_config:
+      heater_label:             Solid State Relay
+      heater_type:              HEATER_TYPE_PWM
+      heater_interface:         HEATER_IF_PIN
+      heater_connection:        D12
+      heater_max_power_watts:   6000.0
